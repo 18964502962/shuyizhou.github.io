@@ -1,115 +1,137 @@
-# 周舒怡的个人作品集
+# 周舒怡 - AI算法工程师 & 全栈开发者
 
-基于 [simplefolio](https://github.com/cobiwave/simplefolio) 模板构建的个人作品集网站。
+<div align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-## 🚀 一键部署到 GitHub Pages
-
-### 第一步：创建 GitHub 仓库
-
-1. 打开 https://github.com/new
-2. **仓库名称必须为：`zy-shirley.github.io`**（把你自己的 GitHub 用户名替换 `zy-shirley`）
-3. 选 **Public**（公开仓库）
-4. 不要勾选 "Add a README" 或 "Add .gitignore"
-5. 点击 **Create repository**
-
-### 第二步：推送代码
-
-仓库创建后会显示一个链接，类似：
-```
-https://github.com/你的用户名/zy-shirley.github.io.git
-```
-
-把下面这行命令里的 `你的用户名` 换成你的实际 GitHub 用户名，然后运行：
-
-```bash
-cd C:\Users\10029\WorkBuddy\2026-09-21-17-02-03\zy-shirley-portfolio
-
-# 把远程仓库地址换成你自己的
-git remote add origin https://github.com/你的用户名/zy-shirley.github.io.git
-git branch -M main
-git push -u origin main
-```
-
-### 第三步：开启 GitHub Pages（通常会自动开启）
-
-1. 进入你的 GitHub 仓库页面
-2. 点击 **Settings** → 左侧 **Pages**
-3. 确保 **Source** 选的是 `Deploy from a branch`，分支选 `main`
-4. 保存后，等待约 1-2 分钟
-
-### 第四步：访问你的网站
-
-浏览器打开：
-```
-https://zy-shirley.github.io
-```
+</div>
 
 ---
 
-## 📝 自定义修改指南
+## 👋 关于我
 
-### 修改个人信息
-编辑 `index.html`，搜索以下关键词替换：
-- `周舒怡` → 你的英文名/中文名
-- `1002968845@qq.com` → 你的邮箱
-- `zsyymm2962` → 你的微信号
-- `18964502962` → 你的手机号
+澳门理工大学 **大数据与物联网硕士** 在读，研究方向为**生理信号检测与深度学习算法**。
 
-### 添加头像图片
-1. 把你的照片放在 `assets/images/` 目录
-2. 在 `index.html` 中找到 `<div class="avatar-placeholder">` 替换为：
-```html
-<img src="assets/images/avatar.jpg" alt="Profile" class="avatar-img">
-```
+具备从数据采集、清洗、特征工程到模型训练与部署的完整 AI 项目经验，同时拥有扎实的全栈开发能力，可独立完成基于 Vue.js + Flask 的 Web 应用开发。
 
-### 添加项目截图
-每个项目卡片里有 `.project-placeholder` 元素，替换为：
-```html
-<img src="assets/images/project-screenshot.png" alt="Project Screenshot" class="project-img">
-```
-
-### 修改配色
-编辑 `assets/css/style.css` 顶部的 CSS 变量：
-```css
-:root {
-    --primary-color: #6c63ff;   /* 主色调 - 可改成你喜欢的颜色 */
-    --accent-color: #00d4aa;    /* 强调色 */
-}
-```
+**技术方向：AI算法 × 全栈开发 × 物联网**
 
 ---
 
-## 📋 项目结构
+## 💼 实习经历
 
-```
-zy-shirley-portfolio/
-├── index.html          # 主页面
-├── README.md           # 说明文档
-├── .gitignore          # Git 忽略配置
-├── .nojekyll           # 禁用 Jekyll 处理
-└── assets/
-    ├── css/
-    │   └── style.css   # 样式（含暗色/亮色主题）
-    ├── js/
-    │   └── main.js     # 交互逻辑（打字机/动画/主题切换）
-    └── images/         # ← 你的图片放这里
-```
+### 北京智谱华章科技股份有限公司 | AI 技术实习生
+*2026.03 - 2026.07*
+
+- 负责边缘 AI 设备（墨水屏终端）的应用容器化部署与推理服务治理，设计任务调度进程守护与自愈机制，**服务调度成功率稳定在 99%**
+- 负责多硬件终端的数据采集链路运维与通信协议调优，优化端侧推理与上行传输管道，将**端到端推理响应延迟控制在 150ms 以内**
+- 自主构建自动化回归测试流水线，累计执行 **6000+ 测试用例**，输出 7 份深度测评报告
+- 参与企业级私有知识库与 RAG（检索增强生成）应用的后端服务维护
+
+**技术栈：** Docker, RAG, ETL, 边缘计算, Linux
 
 ---
 
-## 🔧 常见问题
+### 大金（中国）投资有限公司浙江分公司 | 全栈工程实习生
+*2024.12 - 2025.02*
 
-**Q: 网站打不开？**
-→ 等待 1-2 分钟让 GitHub Pages 生效，或者检查一下 Steps 1-3 是否都完成了
+- 负责企业级促销活动平台的全栈服务架构部署与线上运维，基于 **Vue.js + Flask** 技术栈完成项目上线
+- 搭建多维度可观测性监控体系，实时采集服务器负载、API 响应延迟及页面访问日志
+- 通过慢查询优化与静态资源缓存策略，将**活动期间系统整体故障率压降至 1% 以下**
 
-**Q: 想更新内容？**
-→ 本地修改文件 → `git add -A` → `git commit -m "更新说明"` → `git push`
-
-**Q: 想要更短的链接？**
-→ 自定义域名：Settings → Pages → Custom domain，填入你买的域名并配置 DNS
+**技术栈：** Vue.js, Flask, Nginx, 监控告警, 数据分析
 
 ---
 
-> 原始模板：[simplefolio](https://github.com/cobiwave/simplefolio) (MIT License)
+## 🔬 研究项目
+
+### 非接触式呼吸检测系统（硕士课题）
+*2024.09 - 2026.03*
+
+基于 FactorizePhys 模型进行创新性改进，提出融合运动感知注意力和自监督重建学习的呼吸率检测模型。
+
+**核心工作：**
+- 设计双注意力机制（全局 + 局部运动感知）
+- 实现 700+ 行 PyTorch 模型代码
+- 多任务学习框架：信号预测 + 运动重建
+- **技术栈：** PyTorch, 3D-CNN, 注意力机制, NMF分解
+
+---
+
+### 实时多人健康监测系统
+*2024.10 - 2025.08*
+
+基于 rPPG（远程光电容积脉搏波）技术的非接触式生命体征监测系统。
+
+**核心工作：**
+- Flask 后端 + SocketIO 实时双向通信
+- 支持最多 3 人同时监测
+- Chart.js 实时数据可视化，稳定 30fps
+- **技术栈：** Python, Flask, WebSocket, Chart.js
+
+---
+
+### 多人生理信号数据采集系统
+*2025.01 - 2025.12*
+
+分布式数据采集系统，实现视频录制与血氧仪数据的网络同步采集。
+
+**核心工作：**
+- UDP 时间同步协议，精度 < 100ms
+- FFmpeg 进程调度优化，NVENC 硬件编码
+- 应用于 30 名实验人员，丢帧率 < 0.1%
+- **技术栈：** Python, FFmpeg, UDP, 多线程, HID
+
+---
+
+## 🛠 技术技能
+
+| 类别 | 技能 |
+|------|------|
+| **AI/ML** | PyTorch, 3D-CNN, 注意力机制, rPPG算法, 信号处理 |
+| **后端** | Python (Flask), Flask-SocketIO, WebSocket, REST API |
+| **前端** | Vue.js, JavaScript ES6+, HTML5/CSS3, Chart.js |
+| **运维** | Linux, Docker, Nginx, Shell脚本, 集群管理 |
+| **数据** | MySQL, Redis, FFmpeg, Pandas, NumPy |
+| **网络** | TCP/IP, UDP多播, Socket编程, 网络调优 |
+
+**语言能力：** 中文（母语）| 英语 CET-6 | 日语
+
+---
+
+## 🎓 教育背景
+
+**澳门理工大学** | 大数据与物联网硕士
+*2024.08 - 2026.06*
+研究方向：生理信号检测与深度学习算法
+主修课程：物联网系统架构、大数据分析、机器学习、深度学习、神经网络、传感器信号处理
+
+**上海建桥大学** | 网络工程本科
+*2017.09 - 2021.06*
+主修课程：计算机网络、操作系统、网络协议分析、C/C++、Java、Web开发、TCP/IP原理
+
+---
+
+## 📜 证书
+
+- 上海市计算机三级证书
+- 英语 CET-6
+
+---
+
+## 📫 联系我
+
+| 渠道 | 信息 |
+|------|------|
+| 📧 邮箱 | 1002968845@qq.com |
+| 📱 电话 | 18964502962 |
+| 💬 微信 | zsyymm2962 |
+| 🐙 GitHub | https://github.com/18964502962 |
+
+---
+
+> 感谢来访！欢迎通过上述联系方式与我取得联系。
