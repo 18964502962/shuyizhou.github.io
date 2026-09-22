@@ -778,33 +778,47 @@ img {
 /* ---- Experience Section ---- */
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background: var(--gradient-1);
+    padding: 2rem 0;
 }
 
 .timeline-item {
     position: relative;
     margin-bottom: 3rem;
-    width: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
-.timeline-item:nth-child(odd) {
-    padding-right: 3rem;
+.timeline-marker {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px var(--bg-color), 0 0 0 6px var(--primary-color);
+    z-index: 10;
 }
 
-.timeline-item:nth-child(even) {
-    margin-left: 50%;
-    padding-left: 3rem;
+.timeline-content {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 40px rgba(108, 99, 255, 0.2);
+    transform: translateY(-5px);
 }
 
 .timeline-marker {
@@ -1522,5 +1536,20 @@ img {
     
     .timeline-marker {
         display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .timeline-marker {
+        display: none;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
     }
 }
