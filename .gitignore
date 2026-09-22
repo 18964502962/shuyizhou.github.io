@@ -1,0 +1,19 @@
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
