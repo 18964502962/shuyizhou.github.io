@@ -1497,3 +1497,30 @@ img {
         gap: 1rem;
     }
 }
+
+
+@media (max-width: 768px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .timeline-marker {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .timeline-content {
+        grid-column: span 1;
+    }
+    
+    .timeline-marker {
+        display: none;
+    }
+}
