@@ -831,13 +831,7 @@ img {
     box-shadow: 0 0 0 4px var(--bg-color), 0 0 0 6px var(--primary-color);
 }
 
-.timeline-item:nth-child(odd) .timeline-marker {
-    right: -8px;
-}
 
-.timeline-item:nth-child(even) .timeline-marker {
-    left: -8px;
-}
 
 .timeline-content {
     background: var(--bg-card);
@@ -1440,14 +1434,11 @@ img {
     }
     
     .timeline-item {
-        width: 100%;
-        padding-left: 2rem !important;
-        padding-right: 0 !important;
-        margin-left: 0 !important;
+        grid-template-columns: 1fr;
     }
     
     .timeline-marker {
-        left: -8px !important;
+        display: none;
         right: auto !important;
     }
     
